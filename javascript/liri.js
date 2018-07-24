@@ -1,9 +1,12 @@
 require("dotenv").config();
 var keys = require("./keys.js");
+var Twitter = require('twitter');
 
-var spotify = new Spotify(keys.spotify);
+// var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
-console.log(spotify);
+console.log(client);
+
+/*
 
 switch (process.argv[2]) {
     case "my-tweets":
@@ -18,3 +21,24 @@ switch (process.argv[2]) {
     case "do-what-it-says":
         random();
 }
+
+function twitter() {
+    $.ajax({
+        url: "https://www.omdbapi.com/?t=romancing+the+stone&y=&plot=short&apikey=trilogy",
+        method: "GET"
+      }).then(function(response) {
+        console.log(response);
+      });
+  
+}
+
+function OMDB() {
+    $.ajax({
+        url: "https://www.omdbapi.com/?t=romancing+the+stone&y=&plot=short&apikey=trilogy",
+        method: "GET"
+      }).then(function(response) {
+        console.log(response);
+      });
+  
+}
+*/
